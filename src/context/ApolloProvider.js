@@ -6,7 +6,7 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import App from "../App";
 
 const getDomainURL = () => {
-  return "https://onsquarecode-api.herokuapp.com/";
+  return process.env.REACT_APP_ON_SQUARE_CODE_API_URL;
 };
 
 const link = createHttpLink({ uri: getDomainURL() });
