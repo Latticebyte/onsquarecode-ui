@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/onsquarecode-ui/static/css/main.dab846f8.css",
-    "main.js": "/onsquarecode-ui/static/js/main.a9180569.js",
+    "main.js": "/onsquarecode-ui/static/js/main.ebf46540.js",
     "static/js/787.401ac68d.chunk.js": "/onsquarecode-ui/static/js/787.401ac68d.chunk.js",
     "index.html": "/onsquarecode-ui/index.html",
     "main.dab846f8.css.map": "/onsquarecode-ui/static/css/main.dab846f8.css.map",
-    "main.a9180569.js.map": "/onsquarecode-ui/static/js/main.a9180569.js.map",
+    "main.ebf46540.js.map": "/onsquarecode-ui/static/js/main.ebf46540.js.map",
     "787.401ac68d.chunk.js.map": "/onsquarecode-ui/static/js/787.401ac68d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dab846f8.css",
-    "static/js/main.a9180569.js"
+    "static/js/main.ebf46540.js"
   ]
 }
