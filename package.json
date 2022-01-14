@@ -2,7 +2,7 @@
   "name": "onsquarecode-ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Latticebyte.github.io/onsquarecode-ui",
+  "homepage": "https://latticebyte.github.io/onsquarecode-ui",
   "dependencies": {
     "@apollo/client": "^3.5.7",
     "@testing-library/jest-dom": "^5.16.1",
