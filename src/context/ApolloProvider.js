@@ -1,18 +1,29 @@
-import React from "react";
-import ApolloClient from "apollo-client";
-import { InMemoryCache } from "apollo-cache-inmemory";
-import { createHttpLink } from "apollo-link-http";
-import { ApolloProvider } from "@apollo/react-hooks";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  HttpLink,
+} from "@apollo/client";
+import { createPersistedQueryLink } from "@apollo/client/link/persisted-queries";
+import { sha256 } from "crypto-hash";
+
 import App from "../App";
 
-const getDomainURL = () => {
-  return process.env.REACT_APP_ON_SQUARE_CODE_API_URL;
-};
+const getDomainURL = () => process.env.REACT_APP_ON_SQUARE_CODE_API_URL;
 
-const link = createHttpLink({ uri: getDomainURL() });
+// const link = new HttpLink({ uri: getDomainURL() });
+
+// using persisted query link to cache the query results
+const link = createPersistedQueryLink({
+  sha256,
+  useGETForHashedQueries: true,
+}).concat(new HttpLink({ uri: getDomainURL() }));
 
 // For local setup
-// const link = createHttpLink({ uri: "http://localhost:4000" });
+// const link = createPersistedQueryLink({
+//   sha256,
+//   useGETForHashedQueries: true,
+// }).concat(new HttpLink({ uri: "http://localhost:4000" }));
 
 const client = new ApolloClient({
   link,

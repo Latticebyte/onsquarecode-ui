@@ -1,4 +1,4 @@
-import { useQuery } from "@apollo/react-hooks";
+import { useQuery } from "@apollo/client";
 import { GET_ALL_CODES } from "../../graphql";
 
 const CodeEditor = () => {
