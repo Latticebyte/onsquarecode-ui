@@ -5,7 +5,7 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/onsquarecode-ui" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
