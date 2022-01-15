@@ -1,9 +1,9 @@
 name: Master Deployment CI
 on:
   push:
-    branches: [ master, develop, test ]
+    branches: [ master ]
   pull_request:
-    branches: [ master, develop, test ]
+    branches: [ master ]
 
 jobs:
   build:
