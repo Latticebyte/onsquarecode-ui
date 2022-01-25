@@ -1,8 +1,12 @@
 {
-  "homepage": "https://latticebyte.github.io/onsquarecode-ui",
   "name": "onsquarecode-ui",
+  "description": "Create and share beautiful images of your source code",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://latticebyte.github.io/onsquarecode-ui",
+  "engines": {
+    "node": ">=12"
+  },
   "dependencies": {
     "@apollo/client": "^3.5.7",
     "@testing-library/jest-dom": "^5.16.1",
@@ -70,6 +74,6 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "*.{js,jsx,json,ts,tsx,scss,css,html,md}": "prettier --write"
+    "*.{js,jsx,json,ts,tsx,scss,css,html,md}": "prettier --config .prettierrc --write"
   }
 }
