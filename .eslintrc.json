@@ -13,7 +13,6 @@
   },
   "plugins": ["import", "react", "jsx-a11y", "react-hooks"],
   "rules": {
-    "import/no-unresolved": "error",
     "no-duplicate-imports": "error",
     "react/prop-types": "off",
     "react/display-name": "off",
@@ -29,12 +28,6 @@
   "settings": {
     "react": {
       "version": "detect"
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"],
-        "moduleDirectory": ["node_modules", "src/"]
-      }
     }
   }
 }

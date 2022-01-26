@@ -73,7 +73,10 @@
     "tailwindcss": "^3.0.14"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint",
+      "eslint --cache --fix"
+    ],
     "*.{js,jsx,json,ts,tsx,scss,css,html,md}": "prettier --config .prettierrc --write"
   }
 }
