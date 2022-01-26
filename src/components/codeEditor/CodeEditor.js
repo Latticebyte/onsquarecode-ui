@@ -2,8 +2,12 @@ import { useContext, useState } from "react";
 import { Controlled as CodeMirror } from "react17-codemirror2";
 import { DEFAULT_SETTINGS } from "../../constants";
 import { GlobalContext } from "../../context/GlobalProvider";
-require("codemirror/lib/codemirror.css");
-require("codemirror/theme/material.css");
+import("codemirror/lib/codemirror.css")
+  .then(() => {})
+  .catch(() => {});
+import("codemirror/theme/material.css")
+  .then(() => {})
+  .catch(() => {});
 
 const CodeEditor = ({ settings, readOnly }) => {
   const { state } = useContext(GlobalContext);
