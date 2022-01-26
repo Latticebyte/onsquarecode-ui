@@ -1,0 +1,24 @@
+documentation:
+  - .gitignore
+  - .gitattributes
+  - README.md
+  - LICENSE
+
+dependencies:
+  - package-lock.json
+  - yarn.lockfile
+
+npm:
+  - .npmignore
+  - package.json
+
+styling:
+  - '**/*.scss'
+
+deployment:
+  - '*.yml'
+  - '.github/workflows/*.yml'
+
+"Type: Feature": ['feature/*', 'feat/*']
+"Type: Bug Fix": fix/*
+"Type: Maintenance": ['chore/*', 'mnt/*', 'weblate*']
